@@ -1,0 +1,55 @@
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: 64px;
+  line-height: 64px;
+  padding: 0px 30px;
+  box-shadow: 0 2px 8px #f0f1f2;
+  .header-logo {
+    width: 236px;
+    height: 100%;
+    float: left;
+    .header-title {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      font-size: 16px;
+      &:hover {
+        color: #1890ff;
+      }
+    }
+  }
+  .user-info {
+    float: right;
+    height: 100%;
+    .user-name {
+      float: left;
+      max-width: 150px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    a {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.65);
+      border-left: 1px solid rgba(0, 0, 0, 0.65);
+      padding-left: 7px;
+      margin-left: 7px;
+      &:hover {
+        color: #1890ff;
+      }
+    }
+  }
+  .ant-menu-horizontal {
+    float: right;
+    line-height: 64px;
+    margin-right: 20px;
+    border-bottom: none;
+    .ant-menu-item.ant-menu-item-selected > a {
+      color: #1890ff;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "wonder-woman",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://opads.sit.bjca.org.cn:10010/web",
+  "dependencies": {
+    "antd": "^3.0.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-app-rewired start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "react-app-rewired build",
+    "build": "npm-run-all build-css build-js",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://opads.sit.bjca.org.cn:10010",
+  "devDependencies": {
+    "babel-jest": "^22.4.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-import": "^1.6.3",
+    "node-sass-chokidar": "^0.0.3",
+    "npm-run-all": "^4.1.2",
+    "react-app-rewired": "^1.5.0"
+  }
+}

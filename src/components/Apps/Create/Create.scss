@@ -1,0 +1,14 @@
+.steps-container {
+  margin: 30px 0px 20px;
+  .step-item {
+    .ant-steps-item-icon, .ant-steps-item-content {
+      cursor: pointer;
+    }
+  }
+  .steps-content {
+    margin-top: 30px;
+    border: 1px solid #eee;
+    padding: 10px 30px 0px;
+    border-radius: 10px;
+  }
+}

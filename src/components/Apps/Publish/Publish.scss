@@ -1,0 +1,40 @@
+.publish-container {
+  margin: 30px 0px;
+  .publish-label {
+    color: rgba(0, 0, 0, 0.85);
+    margin-top: 10px;
+  }
+  .publish-record {
+    font-family: "Courier New", Monaco, Courier, Consolas, monospace;
+    margin-top: 10px;
+    &.ant-input-disabled {
+      color: #666
+    }
+  }
+  .publish-table{
+    margin-top: 10px;
+  }
+  .directory-box {
+    border: 1px solid #eee;
+    overflow: scroll;
+    border-radius: 5px;
+    margin-top: 50px;
+    .directory-header {
+      height: 34px;
+      line-height: 34px;
+      background-color: #eee;
+      padding: 0px 20px;
+    }
+    .directory-content {
+      padding: 20px;
+      &.ant-input-disabled {
+        color: rgba(0, 0, 0, 0.65);
+        background-color: #fff;
+      }
+    }
+  }
+  .publish-btn {
+    margin: 30px 0px;
+    width: 120px;
+  }
+}
